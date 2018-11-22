@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>clashes ביחד זה כיף מתמיד</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage fixed header and footer." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Inlustration -->
+                <a href="#home"><i class="fas fa-chess-knight"></i> Logo</a>
+            </div>
+    
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <!--
+       -->
+                <li><a href="#services">Services</a></li>
+                <!--
+       -->
+                <li><a href="#about">About</a></li>
+                <!--
+       -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+    </div>
+    
+    
+    <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- <div id="footer">Footer</div> -->
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="intro">
+                <h1>Fixed elements</h1>
+                <p>Create your own headers and footers</p>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>How to do it</h1>
+                    <p>
+                        You will need to place your header and footer outside the plugin's wrapper. This way it won't move on scrolling. Take a look
+                        at the source code of this page.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" id="slide2">
+                <h1>Slide 2</h1>
+                <!-- <img src="imgs/iphone-blue.png" alt="iphone" id="iphone-two" /> -->
+            </div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Enjoy it</h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            css3: true
+        });
+    </script>
+
+</body>
+
+</html>
