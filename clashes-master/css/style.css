@@ -62,7 +62,6 @@
 }
 
 body {
-  background: rgb(250, 250, 250) url(http://lorempixel.com/1920/1080/nature/);
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
@@ -125,7 +124,7 @@ a {
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
-} @media(max-width: 640px) {
+} @media(max-width: 730px) {
     #navbar ul {
       display: none;
     }
@@ -199,7 +198,11 @@ a {
 /*======================================================
                     Mobile Menu Menu Icon
   ======================================================*/
-@media(max-width: 640px) {
+@media(max-width: 730px) {
+  #menu{
+    top:60px;
+    display: grid;
+  }
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -329,6 +332,10 @@ a {
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
   }
+
+  .nav-wrapper li{
+    display: none !important;
+  }
 }
 
 
@@ -338,10 +345,10 @@ a {
 .overlay-menu {
   background: lightblue;
   color: rgb(13, 26, 38);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   padding-right: 15px;
@@ -353,7 +360,7 @@ a {
 }
 
 .overlay-menu ul, .overlay-menu li {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 

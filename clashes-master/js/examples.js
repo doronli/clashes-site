@@ -1,10 +1,10 @@
 /*============================================================================
                                     Évelym S.
-                    https://www.linkedin.com/in/evelym-santos/
   ============================================================================*/
 
 // Navigation
 // Responsive Toggle Navigation =============================================
+document.getElementById("overlay-menu").style.display = "none";
 let menuIcon = document.querySelector('.menuIcon');
 let nav = document.querySelector('.overlay-menu');
 
@@ -25,7 +25,9 @@ let toggleIcon = document.querySelector('.menuIcon');
 toggleIcon.addEventListener('click', () => {
     if (toggleIcon.className != 'menuIcon toggle') {
         toggleIcon.className += ' toggle';
+        document.getElementById("overlay-menu").style.display = "flex";
     } else {
         toggleIcon.className = 'menuIcon';
+        document.getElementById("overlay-menu").style.display = "none";
     }
 });
