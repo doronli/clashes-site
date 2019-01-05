@@ -353,10 +353,13 @@ $(window).resize(function (event) {
  ====================================== */
 $(document).ready(function () {
     "use strict";
-    
+  
+
+
     $(".questions-icon").click(function() {
       $(this).toggleClass("rotate-arrow");
     });
+ 
     // Bootsnav menu work with eualize height
     $("nav.navbar.bootsnav ul.nav").each(function () {
         $("li.dropdown", this).on("mouseenter", function () {

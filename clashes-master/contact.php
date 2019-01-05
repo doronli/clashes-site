@@ -3,6 +3,7 @@
   if(isset($_POST['email'])) {
 	  
 	$name =$_POST["name"];
+	$companyName =$_POST["companyName"];
 	$phone =$_POST["phoneNumber"];
 	$from =$_POST["email"];
 	$date=$_POST["date"];
@@ -14,7 +15,8 @@
 	$subject="message from customer";
 
 	$message = "
-	name: $name \n
+	company name: $name \n
+	Name of company representative: $companyName \n
 	phone number: $phone \n
 	email: $from \n
 	date: $date \n
