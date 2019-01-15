@@ -1759,7 +1759,7 @@ $(document).ready(function () {
                     .find("input:eq(" + index + ")")
                     .removeClass("required-error");
                 }
-            } else if (index == 2) {
+            } else if (index == 3) {
               if (!/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val())) {
                 $("#contact-form")
                   .find("input:eq(" + index + ")")
@@ -1771,7 +1771,7 @@ $(document).ready(function () {
                   .removeClass("required-error");
               }
             }
-            else if (index == 3) {
+            else if (index == 2) {
                 if ($(this).val() == null || $(this).val() == "") {
                   $("#contact-form")
                     .find("input:eq(" + index + ")")
@@ -1795,7 +1795,18 @@ $(document).ready(function () {
                     .removeClass("required-error");
                 }
             }
-
+            else if (index == 5) {
+                if ($(this).val() == null || $(this).val() == "") {
+                    $("#contact-form")
+                        .find("input:eq(" + index + ")")
+                        .addClass("required-error");
+                    error = false;
+                } else {
+                    $("#contact-form")
+                        .find("input:eq(" + index + ")")
+                        .removeClass("required-error");
+                }
+            }
         });
         return error;
     }

@@ -3854,6 +3854,10 @@ aside .latest-post li figure {width: 75px;}
     #contactUsImg{
         display:none;
     }
+    
+    .font-color-form > span{
+        margin-bottom: 10px;
+    }
 }
 .rotate-arrow{
     transform: rotate(-90deg);
@@ -3861,7 +3865,7 @@ aside .latest-post li figure {width: 75px;}
 }
 #clients{padding-top: 0px !important}
 /* #contactUsImg{
-   background-position-x: -250px !important;
+    height: 600px !important;
 } */
 .inner-link{font-size: 1.6rem !important}
 
@@ -3903,4 +3907,8 @@ aside .latest-post li figure {width: 75px;}
 
 .font-color-form{
     color:#6F6F6F;
+    text-align:right !important;
 }
+.font-color-form > span{
+        margin-bottom: 10px;
+    }
