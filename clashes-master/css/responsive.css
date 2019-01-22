@@ -4369,6 +4369,8 @@
     .xs-center-col {float: none; margin: 0 auto;}
     .mobile-height, .swiper-full-screen { height: auto !important;}
     .mobile-height .full-screen, .swiper-full-screen .full-screen {height: 480px !important; min-height: 480px !important}
+    .padding-top-sm-200{padding-top: 200px}
+    .position-y-sm{background-position-y: 80px}
     .overlap-section {margin-top: 0}
     .gridblock-main {padding: 15px;}
     .gridblock-list li {width: 100%;}

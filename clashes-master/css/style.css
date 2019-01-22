@@ -47,6 +47,7 @@ Table of contents
 
 body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}
+header{background-color: #f7f7f7}
 a, a:active, a:focus { color: #6f6f6f; text-decoration: none; }
 a:hover, a:active{color: #ff214f; text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;}
@@ -3619,6 +3620,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 
 .bg-dark-footer{background-color:#141414;}
 .footer-logo {max-height: 28px;}
+.footer-logo-65 {max-height: 65px;}
 
 /* footer input */
 footer input::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; font-size: 11px; font-weight: 400; opacity:1;}

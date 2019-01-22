@@ -120,15 +120,15 @@ function init_scroll_navigate() {
     if (!$('header').hasClass('no-sticky')) {
         if ($(document).scrollTop() >= headerHeight) {
             $('header').addClass('sticky');
-            imageUrl = "images/logo-black.png";
+            // imageUrl = "images/logo-black.png";
         } else if ($(document).scrollTop() <= headerHeight) {
             $('header').removeClass('sticky');
-            imageUrl = "images/logo-white.png";
+            // imageUrl = "images/logo-white.png";
             setTimeout(function () {
                 setPageTitleSpace();
             }, 500);
         }
-        $("#logoImg").attr("src", imageUrl);
+        // $("#logoImg").attr("src", imageUrl);
 
         SetMegamenuPosition();
     }
