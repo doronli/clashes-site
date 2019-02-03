@@ -2653,6 +2653,7 @@ $(document).ready(function () {
         }, 1000);
 
     });
+    $('#home').addClass('bg-image');
 
     $('.accordion-style2 .collapse').on('show.bs.collapse', function () {
         var id = $(this).attr('id');
@@ -2751,6 +2752,8 @@ $(document).ready(function () {
         $(".dropdown-menu").removeClass(getIn);
         $(".dropdown-menu").addClass(getOut);
     }
+
+
 
 });
 /* ===================================
